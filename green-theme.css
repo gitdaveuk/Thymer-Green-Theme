@@ -1,0 +1,218 @@
+/*
+* Green Hues Theme for Thymer
+* Dark mode with various shades of green
+*/
+
+/* ------------------------------------------- */
+/* Green Hues Dark Theme                       */
+/* ------------------------------------------- */
+html[data-theme="basic-green-dark"] {
+    color-scheme: dark;
+
+    /* ------------------------------------------- */
+    /* 1. Headings - Uniform color                */
+    /* ------------------------------------------- */
+    .heading-h1,
+    .heading-h2,
+    .heading-h3,
+    .heading-h4,
+    .heading-h5,
+    .heading-h6 {
+        color: #d4f4dd;
+    }
+
+    /* ------------------------------------------- */
+    /* 2. Background Colors                        */
+    /* ------------------------------------------- */
+    --color-bg-50: #4a6b4f;
+    --color-bg-100: #3a5640;
+    --color-bg-150: #2d4433;
+    --color-bg-200: #243529;
+    --color-bg-300: #1a2920;
+    --color-bg-400: #141f19;
+    --color-bg-500: #0d1711;
+    --color-bg-600: #0d1711;
+    --color-bg-700: #0a120d;
+    --color-bg-800: #1a2920; /* Sidebar */
+    --color-bg-900: #0d1711; /* Main window */
+    --color-bg-950: #050a07;
+    --color-bg-500-50: rgba(13, 23, 17, 0.5);
+    --color-bg-950-50: rgba(5, 10, 7, 0.65);
+
+    /* ------------------------------------------- */
+    /* 3. Primary Colors (Green accent)            */
+    /* ------------------------------------------- */
+    --color-primary-50: #ecfdf5;
+    --color-primary-100: #d1fae5;
+    --color-primary-200: #a7f3d0;
+    --color-primary-300: #6ee7b7;
+    --color-primary-400: #34d399; /* Emerald green */
+    --color-primary-500: #10b981;
+    --color-primary-600: #059669;
+    --color-primary-700: #047857;
+    --color-primary-800: #065f46;
+    --color-primary-900: #064e3b;
+    --color-primary-950: #022c22;
+    --color-primary-400-70: rgba(52, 211, 153, 0.7);
+    --color-primary-950-20: rgba(2, 44, 34, 0.2);
+    --color-primary-text-100: #0d1711;
+
+    /* ------------------------------------------- */
+    /* 4. Text & Icons                             */
+    /* ------------------------------------------- */
+    --color-text-50: #d4f4dd;
+    --color-text-100: #ffffff;
+    --color-text-200: #c8edd4;
+    --color-text-300: #a7d4b5;
+    --color-text-400: #86ba96;
+    --color-text-500: #5a8a67;
+    --color-text-600: #4a6b4f;
+    --color-text-700: #34d399;
+    --color-text-800: #c8edd4;
+    --color-text-900: #1a2920;
+    --color-text-950: #5a8a67;
+
+    /* ------------------------------------------- */
+    /* 5. Semantic Colors                          */
+    /* ------------------------------------------- */
+    --text-ok: #34d399;
+    --text-status-online: #34d399;
+    --text-warning: #fbbf24;
+    --text-error: #ef4444;
+    --bg-alert: #ef4444;
+    --fg-alert: #d4f4dd;
+
+    /* ------------------------------------------- */
+    /* 6. Links, Tags & Mentions                   */
+    /* ------------------------------------------- */
+    --link-color: #34d399;
+    --link-hover-color: #6ee7b7;
+    --ed-link-color: #34d399;
+    --ed-link-hover-color: #6ee7b7;
+
+    --ed-hashtag-color: #34d399;
+    --ed-hashtag-bg: rgba(52, 211, 153, 0.15);
+
+    --ed-mention-color: #86efac;
+    --ed-mention-bg: rgba(134, 239, 172, 0.15);
+    --ed-mention-hover-bg: rgba(134, 239, 172, 0.25);
+    --ed-mention-hover-color: #a7f3d0;
+
+    --ed-datetime-color: #6ee7b7;
+    --ed-datetime-bg: rgba(110, 231, 183, 0.15);
+
+    /* ------------------------------------------- */
+    /* 7. Tasks & Checkboxes                       */
+    /* ------------------------------------------- */
+    --ed-check-div-border: #34d399;
+    --ed-check-div-hover-border: #6ee7b7;
+    --ed-check-done-bg: #34d399;
+    --ed-check-done-fg: #0d1711;
+
+    /* Done task styling */
+    .listitem.listitem-task.state-done .lineitem-text {
+        color: #5a8a67 !important;
+        text-decoration-color: #5a8a67 !important;
+        opacity: 1 !important;
+    }
+
+    /* ------------------------------------------- */
+    /* 8. Selection & Caret                        */
+    /* ------------------------------------------- */
+    --selection-bg: rgba(52, 211, 153, 0.3);
+    --selection-fg: #ffffff;
+    --ed-selection-self-bg: rgba(52, 211, 153, 0.3);
+    --ed-selection-blurred-bg: rgba(52, 211, 153, 0.15);
+
+    --ed-caret-self-radius: 2px;
+    --ed-caret-self-border-width: 0px;
+    --ed-caret-self-background: #34d399;
+    --ed-caret-self-box-shadow: 0 0 4px rgba(52, 211, 153, 0.5);
+
+    /* ------------------------------------------- */
+    /* 9. Quotes & Code                            */
+    /* ------------------------------------------- */
+    --ed-quote-border-color: #34d399;
+
+    --ed-code-border: transparent;
+    --ed-code-bg: rgba(26, 41, 32, 0.6);
+
+    /* Inline code */
+    .lineitem-code {
+        background-color: var(--color-bg-200) !important;
+        color: #fbbf24 !important;
+        border-radius: 4px;
+        padding: 2px 5px;
+        font-family: var(--font-monospace);
+    }
+
+    /* Note blocks */
+    --ed-block-note-bg: rgba(52, 211, 153, 0.1);
+    --ed-block-note-border: #34d399;
+
+    /* ------------------------------------------- */
+    /* 10. UI Components                           */
+    /* ------------------------------------------- */
+    --cards-bg: #0d1711;
+    --cards-hover-bg: #1a2920;
+    --cards-border-color: transparent;
+    --cards-border-color-focused: transparent;
+
+    --side-bg-active-focus: #047857;
+    --side-fg-active-focus: #d4f4dd;
+    --sidebar-bg-hover: #141f19;
+    --sidebar-border-color: transparent;
+
+    --cmdpal-bg-color: #0d1711;
+    --cmdpal-selected-bg-color: #34d399;
+    --cmdpal-selected-fg-color: #0d1711;
+    --cmdpal-hover-bg-color: #1a2920;
+    --cmdpal-border-color: transparent;
+
+    --input-bg-color: #0d1711;
+    --input-border-color: transparent;
+    --input-border-focus: 1px solid #34d399;
+    --input-border-shadow: 0 0 8px rgba(52, 211, 153, 0.4);
+
+    --button-primary-bg-color: #34d399;
+    --button-primary-fg-color: #0d1711;
+    --button-primary-bg-hover-color: #10b981;
+    --button-bg-color: #1a2920;
+    --button-border-color: transparent;
+    --button-bg-hover-color: #243529;
+
+    --color-shadow: rgba(0, 0, 0, 0.4);
+    --color-shadow-cards: 0 4px 6px rgba(0, 0, 0, 0.3);
+    --color-shadow-hover: 0 6px 12px rgba(0, 0, 0, 0.4);
+
+    --logo-color: #34d399;
+    --logo-glow-shadow:
+        0 0 15px rgba(52, 211, 153, 0.5),
+        0 0 30px rgba(52, 211, 153, 0.3);
+
+    /* Enums */
+    --enum-red-bg: rgba(239, 68, 68, 0.25);
+    --enum-red-fg: #ef4444;
+    --enum-orange-bg: rgba(251, 146, 60, 0.25);
+    --enum-orange-fg: #fb923c;
+    --enum-yellow-bg: rgba(251, 191, 36, 0.25);
+    --enum-yellow-fg: #fbbf24;
+    --enum-green-bg: rgba(52, 211, 153, 0.25);
+    --enum-green-fg: #34d399;
+    --enum-cyan-bg: rgba(6, 182, 212, 0.25);
+    --enum-cyan-fg: #06b6d4;
+    --enum-blue-bg: rgba(59, 130, 246, 0.25);
+    --enum-blue-fg: #3b82f6;
+    --enum-purple-bg: rgba(167, 139, 250, 0.25);
+    --enum-purple-fg: #a78bfa;
+    --enum-pink-bg: rgba(236, 72, 153, 0.25);
+    --enum-pink-fg: #ec4899;
+
+    --prop-border-focused: #0d1711;
+    --prop-bg-focused: rgba(52, 211, 153, 0.3);
+    --shadow-sticky-row: 0 6px 12px rgba(0, 0, 0, 0);
+    --ed-drag-handle-color: #34d399;
+    --ed-drag-handle-hover-border: #6ee7b7;
+
+    --gradient-scrim: none;
+}
