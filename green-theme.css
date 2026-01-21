@@ -216,3 +216,10 @@ html[data-theme="basic-green-dark"] {
 
     --gradient-scrim: none;
 }
+
+html[data-theme] {
+--ed-caret-self-radius: 2px;
+--ed-caret-self-border-width: 0px;
+--ed-caret-self-background: color-mix(in srgb, darkgreen 70%, transparent);
+--ed-caret-self-box-shadow: 0 0 2px darkgreen;
+}
